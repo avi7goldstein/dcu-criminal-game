@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCU Criminal Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; color: #333; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; }
+        .mission, .boss, .combat, .inventory, .faction { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DCU Criminal Game</h1>
+            <p>Engage in a thrilling adventure where you navigate missions, defeat bosses, and manage your resources!</p>
+        </div>
+        <div class="mission">
+            <h2>Missions</h2>
+            <ul id="missions-list">
+                <li><button onclick="startMission('Bank Heist')">Bank Heist</button></li>
+                <li><button onclick="startMission('Stolen Artifact')">Stolen Artifact</button></li>
+                <li><button onclick="startMission('Gang War')">Gang War</button></li>
+            </ul>
+        </div>
+        <div class="boss">
+            <h2>Bosses</h2>
+            <p id="boss-info">Defeat the bosses to progress in the game!</p>
+        </div>
+        <div class="combat">
+            <h2>Combat System</h2>
+            <p>Use your skills and items to defeat enemies. <button onclick="startCombat()">Enter Combat</button></p>
+        </div>
+        <div class="inventory">
+            <h2>Inventory</h2>
+            <ul id="inventory-list">
+                <li>Health Potion</li>
+                <li>Combat Knife</li>
+                <li>Lockpick</li>
+            </ul>
+            <button onclick="showInventory()">View Inventory</button>
+        </div>
+        <div class="faction">
+            <h2>Faction System</h2>
+            <p>Join a faction and gain unique abilities!</p>
+        </div>
+        <button onclick="saveGame()">Save Game</button>
+        <button onclick="loadGame()">Load Game</button>
+    </div>
+    <script>
+        function startMission(mission) {
+            alert('Starting mission: ' + mission);
+            // Implement mission logic here
+        }
+        function startCombat() {
+            alert('Entering combat!');
+            // Implement combat logic here
+        }
+        function showInventory() {
+            alert('Your inventory contains: Health Potion, Combat Knife, Lockpick');
+            // Show inventory logic here
+        }
+        function saveGame() {
+            alert('Game saved!');
+            // Implement save functionality here
+        }
+        function loadGame() {
+            alert('Game loaded!');
+            // Implement load functionality here
+        }
+    </script>
+</body>
+</html>
